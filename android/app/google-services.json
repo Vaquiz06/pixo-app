@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912055072838",
+    "project_id": "pixo-3cbb5",
+    "storage_bucket": "pixo-3cbb5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912055072838:android:4412afa499b2314ea83247",
+        "android_client_info": {
+          "package_name": "com.pixo.pixo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYmSfFeg-b0paQeGgnuB1nu0whHFqlwcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

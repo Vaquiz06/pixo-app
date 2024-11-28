@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        google()  // Asegúrate de que Google esté en los repositorios
+        mavenCentral()
+    }
+    dependencies {
+        // Agrega la dependencia para el plugin de Google Services
+        classpath 'com.google.gms:google-services:4.4.2'
+        // Última versión disponible
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,43 @@
+name: pixo
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.5.0
+  flutter_spinkit: ^5.1.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.0.3
+  image_picker: ^1.1.2
+  provider: ^6.1.2
+  cached_network_image: ^3.2.3
+  intl: ^0.19.0
+  fluttertoast: ^8.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/videos/
+    - assets/music/
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.png
+  android: true
+  ios: true

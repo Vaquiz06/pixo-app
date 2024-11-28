@@ -1,0 +1,42 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter Plugin
+}
+
+android {
+    namespace = "com.pixo.pixo"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // El Application ID debe coincidir con el nombre de paquete registrado en Firebase
+        applicationId = "com.pixo.pixo"
+        minSdk = 23 // Cambiado de flutter.minSdkVersion a 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug  // Configuración de firma para el build de release
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Aplica el plugin de Google Services para integrar Firebase
+apply plugin: 'com.google.gms.google-services'
