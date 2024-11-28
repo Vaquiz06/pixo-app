@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pixo/pages/profile_page.dart'; // Importa la página de perfil
+import 'package:pixo/pages/profile_page.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({super.key});  // El parámetro 'key' es ahora un super parámetro.
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,6 @@ class HomePage extends StatelessWidget {
                 );
               },
             ),
-            // Otras opciones de menú
           ],
         ),
       ),

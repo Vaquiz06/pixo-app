@@ -1,5 +1,3 @@
-// lib/pages/profile_page.dart
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -40,7 +38,7 @@ class ProfilePage extends StatelessWidget {
                 // Asegurarse de que el widget sigue montado antes de navegar
                 if (!context.mounted) return;
 
-                Navigator.pushReplacementNamed(context, '/auth');
+                Navigator.pushReplacementNamed(context, '/');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurple[700], // Color de fondo del botón
